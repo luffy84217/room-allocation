@@ -31,7 +31,6 @@ const CustomInputNumber = (props) => {
   };
 
   const handleInputChange = (e) => {
-    console.log('2')
     if (+e.target.value >= props.min && +e.target.value <= props.max) {
       setValue(+e.target.value);
       props.onChange(e);
