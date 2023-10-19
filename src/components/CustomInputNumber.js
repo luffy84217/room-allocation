@@ -14,6 +14,7 @@ const CustomInputNumber = (props) => {
         props.onChange(e);
         return prev + props.step;
       }
+      clearInterval(incrementInterval.current);
       return prev;
     });
   };
@@ -26,6 +27,7 @@ const CustomInputNumber = (props) => {
         props.onChange(e);
         return prev - props.step;
       }
+      clearInterval(decrementInterval.current);
       return prev;
     });
   };
