@@ -68,7 +68,7 @@ const RoomAllocation = (props) => {
       <p className="p-4 my-4 bg-green-50 border border-green-200 rounded">尚未分配人數：{remain}人</p>
       {result.map((room, i) => (
         <Room
-          key={`${Date.now()}_${i}`}
+          key={`room_${i}`}
           index={i}
           adult={room.adult}
           child={room.child}
